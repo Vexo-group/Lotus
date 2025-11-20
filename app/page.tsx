@@ -23,6 +23,11 @@ export default function LotusEventos() {
     setMenuOpen(false)
   }
 
+  const openWhatsApp = (service: string) => {
+    const message = encodeURIComponent(`Hola ! Quiero mas informacion del Servicio ${service}`)
+    window.open(`https://wa.me/5492214188503?text=${message}`, '_blank')
+  }
+
   useEffect(() => {
     const handleScroll = () => {
       const ctaSection = document.getElementById('cta-section')
@@ -213,7 +218,7 @@ export default function LotusEventos() {
               <p className="text-lg leading-relaxed mb-4 text-white/90">
                 Te asesoramos para elegir la animación perfecta, asegurando que tus hijos y sus invitados vivan una jornada inolvidable. Podés traer tus propias ideas o dejar que nuestro equipo te ayude a hacerlas realidad.
               </p>
-              <Button variant="outline" className="mt-8 bg-white text-[#e0007b] hover:bg-neutral-100 w-fit">
+              <Button variant="outline" className="mt-8 bg-white text-[#e0007b] hover:bg-neutral-100 w-fit" onClick={() => openWhatsApp('Cumpleanos Infantiles')}>
                 Más Información
               </Button>
             </div>
@@ -232,7 +237,7 @@ export default function LotusEventos() {
               <p className="italic text-white/95 font-medium">
                 Porque crecer también se celebra — Viví tu fiesta teen en Lotus.
               </p>
-              <Button variant="outline" className="mt-8 bg-white text-[#5f2b4a] hover:bg-neutral-100 w-fit">
+              <Button variant="outline" className="mt-8 bg-white text-[#5f2b4a] hover:bg-neutral-100 w-fit" onClick={() => openWhatsApp('Fiesta Teens')}>
                 Más Información
               </Button>
             </div>
@@ -274,7 +279,7 @@ export default function LotusEventos() {
                   <span>Espacio para fotos y disfraces</span>
                 </li>
               </ul>
-              <Button variant="outline" className="mt-8 bg-white text-[#e0007b] hover:bg-neutral-100 w-fit">
+              <Button variant="outline" className="mt-8 bg-white text-[#e0007b] hover:bg-neutral-100 w-fit" onClick={() => openWhatsApp('Fiesta UPD')}>
                 Más Información
               </Button>
             </div>
@@ -290,7 +295,7 @@ export default function LotusEventos() {
               <p className="text-lg leading-relaxed text-white/90">
                 Nuestro salón ofrece comodidad, privacidad y un ambiente rústico cálido, con posibilidad de ambientación personalizada según tu estilo y necesidades. Además, nuestro equipo te asesora en la organización, decoración y logística para que tu evento sea distintivo, divertido y memorable.
               </p>
-              <Button variant="outline" className="mt-8 bg-white text-[#5f2b4a] hover:bg-neutral-100 w-fit">
+              <Button variant="outline" className="mt-8 bg-white text-[#5f2b4a] hover:bg-neutral-100 w-fit" onClick={() => openWhatsApp('Eventos para Adultos')}>
                 Más Información
               </Button>
             </div>
@@ -314,7 +319,7 @@ export default function LotusEventos() {
               <p className="text-lg leading-relaxed text-white/90">
                 Nuestro salón cuenta con proyectores, pantallas, Wi-Fi y todos los recursos necesarios para que tu empresa realice un evento distintivo y profesional.
               </p>
-              <Button variant="outline" className="mt-8 bg-white text-[#e0007b] hover:bg-neutral-100 w-fit">
+              <Button variant="outline" className="mt-8 bg-white text-[#e0007b] hover:bg-neutral-100 w-fit" onClick={() => openWhatsApp('Eventos Corporativos')}>
                 Más Información
               </Button>
             </div>
@@ -333,7 +338,7 @@ export default function LotusEventos() {
               <p className="text-white/90">
                 <span className="font-semibold">Ideal para:</span> 🎨 Artistas independientes o colectivos • 🏛️ Instituciones culturales o educativas • 🍷 Organizadores de eventos culturales con recepción o brindis
               </p>
-              <Button variant="outline" className="mt-8 bg-white text-[#5f2b4a] hover:bg-neutral-100 w-fit">
+              <Button variant="outline" className="mt-8 bg-white text-[#5f2b4a] hover:bg-neutral-100 w-fit" onClick={() => openWhatsApp('Muestras de Arte')}>
                 Más Información
               </Button>
             </div>
@@ -360,7 +365,7 @@ export default function LotusEventos() {
               <p className="italic text-white/95 font-medium">
                 Apoyamos el trabajo local y brindamos un lugar pensado para conectar, mostrar y vender.
               </p>
-              <Button variant="outline" className="mt-8 bg-white text-[#e0007b] hover:bg-neutral-100 w-fit">
+              <Button variant="outline" className="mt-8 bg-white text-[#e0007b] hover:bg-neutral-100 w-fit" onClick={() => openWhatsApp('Ferias')}>
                 Más Información
               </Button>
             </div>
@@ -373,7 +378,7 @@ export default function LotusEventos() {
               <p className="text-lg leading-relaxed text-white/90">
                 Cumpleaños, aniversarios, casamientos, bautismos, Bar/Bat-Mitzvá, Brit-Milá, Simjat-Bat, té de lluvias y más opciones. En Lotus te asesoramos para que encuentres la solución que estabas buscando.
               </p>
-              <Button variant="outline" className="mt-8 bg-white text-[#5f2b4a] hover:bg-neutral-100 w-fit">
+              <Button variant="outline" className="mt-8 bg-white text-[#5f2b4a] hover:bg-neutral-100 w-fit" onClick={() => openWhatsApp('Agasajos Especiales')}>
                 Más Información
               </Button>
             </div>
@@ -553,7 +558,7 @@ export default function LotusEventos() {
                       <div>
                         <h4 className="font-semibold mb-1">Teléfono</h4>
                         <a
-                          href="https://wa.me/5492215607906" target="_blank" className="text-muted-foreground hover:text-primary transition-smooth">
+                          href="https://wa.me/5492214188503" target="_blank" className="text-muted-foreground hover:text-primary transition-smooth">
                           +54 9 2215607906
                         </a>
                       </div>
@@ -635,7 +640,7 @@ export default function LotusEventos() {
 
       {/* WhatsApp Float Button */}
       <a
-        href="https://wa.me/5492215607906"
+        href="https://wa.me/5492214188503"
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-6 right-6 w-14 h-14 bg-green-500 rounded-full flex items-center justify-center text-white shadow-lg hover:bg-green-600 transition-colors z-50"
