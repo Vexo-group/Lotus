@@ -149,6 +149,12 @@ export default function LotusEventos() {
               <p className="text-xl text-center text-foreground leading-relaxed mb-6 text-balance">
                 Si estás buscando un evento personalizado, diferente y divertido,{' '}
                 <span className="text-primary font-semibold">¡llegaste al lugar indicado!</span>
+                {' '}
+              </p>
+              <p className="text-xl text-center text-foreground leading-relaxed mb-6 text-balance">
+                Trabajamos con dedicación, profesionalismo y amor para asegurar que tu festejo sea inolvidable.
+                Contamos con un espacio pensado especialmente para las infancias, adolescentes y para adultos, nuestra experiencia nos permite adaptar cada propuesta con servicios totalmente personalizados.
+                ¡Conocenos y contactanos!
               </p>
             </div>
 
@@ -239,7 +245,7 @@ export default function LotusEventos() {
           {/* Fiesta UPD - Image Left, Content Right */}
           <div className="grid lg:grid-cols-2 min-h-[600px]">
             <div className="relative min-h-[400px] lg:min-h-full">
-              <div className="absolute inset-0 bg-[url('/graduation-party-celebration-students-confetti.jpg')] bg-cover bg-center" />
+              <div className="absolute inset-0 bg-[url('/upd-24.jpg')] bg-cover bg-center" />
               <div className="absolute inset-0 bg-gradient-to-r from-black/40 to-transparent" />
             </div>
             <div className="bg-[#e0007b] text-white p-12 lg:p-16 flex flex-col justify-center">
@@ -613,9 +619,9 @@ export default function LotusEventos() {
             <div>
               <h4 className="font-semibold mb-4 text-input">Contacto</h4>
               <ul className="space-y-2 text-muted-foreground">
-                <li>Centro de La Plata</li>
                 <li>Buenos Aires, Argentina</li>
-                <li>info@lotuseventos.com</li>
+                <li>Calle 14 N° 619, La Plata</li>
+                <li>+54 9 2215607906</li>
               </ul>
             </div>
           </div>
