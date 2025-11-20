@@ -218,7 +218,7 @@ export default function LotusEventos() {
               <p className="text-lg leading-relaxed mb-4 text-white/90">
                 Te asesoramos para elegir la animación perfecta, asegurando que tus hijos y sus invitados vivan una jornada inolvidable. Podés traer tus propias ideas o dejar que nuestro equipo te ayude a hacerlas realidad.
               </p>
-              <Button variant="outline" className="mt-8 bg-white text-[#e0007b] hover:bg-neutral-100 w-fit" onClick={() => openWhatsApp('Cumpleanos Infantiles')}>
+              <Button variant="outline" className="mt-8 bg-white text-[#e0007b] hover:bg-neutral-100 w-fit" onClick={() => openWhatsApp('Cumpleaños Infantiles')}>
                 Más Información
               </Button>
             </div>
