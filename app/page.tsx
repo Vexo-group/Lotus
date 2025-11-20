@@ -578,7 +578,7 @@ export default function LotusEventos() {
                   <div className="mt-8 pt-8 border-t border-neutral-200">
                     <h4 className="font-semibold mb-4">Seguinos en Redes</h4>
                     <div className="flex gap-4">
-                      <Link href="https://www.instagram.com/lotuseventoslp/" className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
+                      <Link href="https://www.instagram.com/lotuseventoslp/" target="_blank" className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
                         <Instagram className="w-5 h-5" />
                       </Link>
                       {/*
