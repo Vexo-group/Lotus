@@ -16,6 +16,7 @@ export default function LotusEventos() {
   const [parallaxOffset, setParallaxOffset] = useState(0)
   const [galleryImages, setGalleryImages] = useState<GalleryImage[]>([])
   const [isGalleryLoading, setIsGalleryLoading] = useState(true)
+  const [promoOpen, setPromoOpen] = useState(false)
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id)
@@ -71,8 +72,39 @@ export default function LotusEventos() {
     }
   }, [])
 
+  useEffect(() => {
+    const timer = setTimeout(() => setPromoOpen(true), 2000)
+    return () => clearTimeout(timer)
+  }, [])
+
   return (
     <div className="min-h-screen bg-neutral-50">
+      {promoOpen && (
+        <div className="fixed inset-0 z-[60] flex items-center justify-center bg-black/60 backdrop-blur-sm p-4">
+          <div className="relative max-w-2xl w-full bg-white rounded-xl shadow-2xl overflow-hidden transition-transform duration-300 ease-out scale-100">
+            <button
+              className="absolute top-3 right-3 p-2 rounded-full bg-black/70 text-white hover:bg-black/80 transition-colors"
+              aria-label="Cerrar promocion"
+              onClick={() => setPromoOpen(false)}
+            >
+              <X className="w-5 h-5" />
+            </button>
+            <img
+              src="/PromoInaguracion.png"
+              alt="Promocion de inauguracion"
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute bottom-12 left-0 right-0 flex justify-center px-4">
+              <Button
+                className="animate-bounce bg-white text-black hover:bg-white/90 shadow-lg"
+                onClick={() => openWhatsApp('Promo Inauguracion')}
+              >
+                Quiero aprovechar
+              </Button>
+            </div>
+          </div>
+        </div>
+      )}
       {/* Header Navigation */}
       <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-neutral-200">
         <div className="container mx-auto px-4">
