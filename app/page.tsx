@@ -175,10 +175,11 @@ export default function LotusEventos() {
         <div className="container mx-auto px-4 py-20 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-5xl md:text-7xl font-bold mb-6 text-balance">
-              Tu Evento Único e <span className="text-primary">Inolvidable</span>
+              Salón de <span className="text-primary">eventos y fiestas</span> fiestas en La Plata
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-pretty text-foreground">
-              Ubicados en el centro de La Plata, somos tu casita de fiesta ideal para cumpleanos infantiles, reuniones familiares, eventos laborales y encuentros con amigos.
+              Tu evento único e inolvidable en pleno centro de la ciudad.
+              Somos tu casita de fiesta ideal para cumpleanos infantiles, reuniones familiares, eventos laborales y encuentros con amigos.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="text-lg px-8" onClick={() => scrollToSection('contacto')}>
