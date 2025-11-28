@@ -17,6 +17,25 @@ export default function LotusEventos() {
   const [galleryImages, setGalleryImages] = useState<GalleryImage[]>([])
   const [isGalleryLoading, setIsGalleryLoading] = useState(true)
   const [promoOpen, setPromoOpen] = useState(false)
+  const orgJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'EventVenue',
+    name: 'LOTUS Eventos',
+    url: 'https://lotuseventoslp.com',
+    image: 'https://lotuseventoslp.com/Lotus_Hero2.jpg',
+    telephone: '+54 9 2215607906',
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: 'Calle 14 N 619',
+      addressLocality: 'La Plata',
+      addressRegion: 'Buenos Aires',
+      addressCountry: 'AR',
+    },
+    sameAs: ['https://www.instagram.com/lotuseventoslp/'],
+    description:
+      'Salon de eventos en el centro de La Plata. Cumpleanos infantiles, fiestas teens, eventos corporativos, ferias, muestras de arte y mas.',
+    areaServed: 'La Plata, Buenos Aires, Argentina',
+  }
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id)
@@ -79,6 +98,10 @@ export default function LotusEventos() {
 
   return (
     <div className="min-h-screen bg-neutral-50">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(orgJsonLd) }}
+      />
       {promoOpen && (
         <div className="fixed inset-0 z-[60] flex items-center justify-center bg-black/60 backdrop-blur-sm p-4">
           <div className="relative max-w-2xl w-full bg-white rounded-xl shadow-2xl overflow-hidden transition-transform duration-300 ease-out scale-100">
