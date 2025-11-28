@@ -33,7 +33,7 @@ export default function LotusEventos() {
     },
     sameAs: ['https://www.instagram.com/lotuseventoslp/'],
     description:
-      'Salon de eventos en el centro de La Plata. Cumpleanos infantiles, fiestas teens, eventos corporativos, ferias, muestras de arte y mas.',
+      'Casita de fiesta y salon de eventos en La Plata. Cumpleanos infantiles, fiestas teens, eventos corporativos, ferias, muestras de arte y mas.',
     areaServed: 'La Plata, Buenos Aires, Argentina',
   }
 
@@ -178,7 +178,7 @@ export default function LotusEventos() {
               Tu Evento Único e <span className="text-primary">Inolvidable</span>
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-pretty text-foreground">
-              Ubicados en el centro de La Plata, somos la mejor opción para eventos laborales, cumpleaños infantiles, reuniones familiares y encuentros con amigos
+              Ubicados en el centro de La Plata, somos tu casita de fiesta ideal para cumpleanos infantiles, reuniones familiares, eventos laborales y encuentros con amigos.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="text-lg px-8" onClick={() => scrollToSection('contacto')}>
@@ -212,9 +212,10 @@ export default function LotusEventos() {
                 {' '}
               </p>
               <p className="text-xl text-center text-foreground leading-relaxed mb-6 text-balance">
-                Trabajamos con dedicación, profesionalismo y amor para asegurar que tu festejo sea inolvidable.
+                Somos tu casita de fiesta en La Plata, pensada para celebrar con chicos, familias y empresas.
+                Trabajamos con dedicacion, profesionalismo y amor para asegurar que tu festejo sea inolvidable.
                 Contamos con un espacio pensado especialmente para las infancias, adolescentes y para adultos, nuestra experiencia nos permite adaptar cada propuesta con servicios totalmente personalizados.
-                ¡Conocenos y contactanos!
+                Conocenos y contactanos!
               </p>
             </div>
 

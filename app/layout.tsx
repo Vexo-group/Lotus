@@ -7,10 +7,12 @@ const geist = Geist({ subsets: ['latin'] })
 const geistMono = Geist_Mono({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'LOTUS - Salon de Eventos en La Plata',
+  title: 'LOTUS - Casita de Fiesta y Salon de Eventos en La Plata',
   description:
-    'Salon de eventos en el centro de La Plata. Cumpleanos infantiles, fiestas teens, eventos corporativos, muestras de arte y mas. Tu evento unico e inolvidable.',
+    'Casita de fiesta y salon de eventos en el centro de La Plata. Cumpleanos infantiles, fiestas teens, eventos corporativos, muestras de arte y mas. Tu evento unico e inolvidable.',
   keywords: [
+    'casita de fiesta La Plata',
+    'casa de fiestas infantiles La Plata',
     'salon de eventos La Plata',
     'cumpleanos infantiles La Plata',
     'fiestas teens',
@@ -19,9 +21,9 @@ export const metadata: Metadata = {
     'lotus eventos',
   ],
   openGraph: {
-    title: 'LOTUS - Salon de Eventos en La Plata',
+    title: 'LOTUS - Casita de Fiesta y Salon de Eventos en La Plata',
     description:
-      'Espacio para cumpleanos infantiles, teens, eventos corporativos, ferias y muestras en el centro de La Plata.',
+      'Tu casita de fiesta en La Plata para cumpleanos infantiles, fiestas teens, eventos corporativos, ferias y muestras.',
     url: '/',
     locale: 'es_AR',
     siteName: 'Lotus Eventos',
@@ -36,9 +38,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'LOTUS - Salon de Eventos en La Plata',
+    title: 'LOTUS - Casita de Fiesta y Salon de Eventos en La Plata',
     description:
-      'Espacio para eventos infantiles, teens, corporativos y mas en el centro de La Plata.',
+      'Casita de fiesta en La Plata para eventos infantiles, teens, corporativos y mas.',
     images: ['/Lotus_Hero2.jpg'],
   },
   alternates: {
