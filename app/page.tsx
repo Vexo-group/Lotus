@@ -175,7 +175,7 @@ export default function LotusEventos() {
         <div className="container mx-auto px-4 py-20 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-5xl md:text-7xl font-bold mb-6 text-balance">
-              Salón de <span className="text-primary">eventos y fiestas</span> fiestas en La Plata
+              Salón de <span className="text-primary">eventos</span> y fiestas en La Plata
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-pretty text-foreground">
               Tu evento único e inolvidable en pleno centro de la ciudad.
