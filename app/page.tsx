@@ -17,6 +17,7 @@ export default function LotusEventos() {
   const [galleryImages, setGalleryImages] = useState<GalleryImage[]>([])
   const [isGalleryLoading, setIsGalleryLoading] = useState(true)
   const [promoOpen, setPromoOpen] = useState(false)
+  const [selectedImage, setSelectedImage] = useState<GalleryImage | null>(null)
   const orgJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'EventVenue',
@@ -102,6 +103,30 @@ export default function LotusEventos() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(orgJsonLd) }}
       />
+      {selectedImage && (
+        <div
+          className="fixed inset-0 z-[70] bg-black/80 backdrop-blur-sm flex items-center justify-center p-4"
+          onClick={() => setSelectedImage(null)}
+        >
+          <div
+            className="relative max-w-5xl w-full bg-black rounded-lg overflow-hidden shadow-2xl"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              className="absolute top-3 right-3 p-2 rounded-full bg-white/80 text-black hover:bg-white transition-colors"
+              aria-label="Cerrar imagen"
+              onClick={() => setSelectedImage(null)}
+            >
+              <X className="w-5 h-5" />
+            </button>
+            <img
+              src={selectedImage.src}
+              alt={selectedImage.alt || 'Imagen de la galeria'}
+              className="w-full h-auto object-contain max-h-[80vh] bg-black"
+            />
+          </div>
+        </div>
+      )}
       {promoOpen && (
         <div className="fixed inset-0 z-[60] flex items-center justify-center bg-black/60 backdrop-blur-sm p-4">
           <div className="relative max-w-2xl w-full bg-white rounded-xl shadow-2xl overflow-hidden transition-transform duration-300 ease-out scale-100">
@@ -480,24 +505,29 @@ export default function LotusEventos() {
           </div>
 
           {isGalleryLoading ? (
-            <p className="text-center text-muted-foreground">Cargando galería...</p>
+            <p className="text-center text-muted-foreground">Cargando galeria...</p>
           ) : galleryImages.length > 0 ? (
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 max-w-7xl mx-auto">
               {galleryImages.map((image, index) => (
-                <div key={`${image.src}-${index}`} className="aspect-square bg-neutral-100 rounded-lg overflow-hidden group cursor-pointer">
+                <button
+                  key={`${image.src}-${index}`}
+                  className="aspect-square bg-neutral-100 rounded-lg overflow-hidden group cursor-pointer focus:outline-none"
+                  onClick={() => setSelectedImage(image)}
+                  aria-label={image.alt || `Imagen de la galeria ${index + 1}`}
+                >
                   <div className="w-full h-full bg-gradient-to-br from-primary/20 to-secondary/20 group-hover:scale-110 transition-transform duration-300 relative">
                     <div
                       className="absolute inset-0 bg-cover bg-center opacity-90 transition-transform duration-300 group-hover:scale-105"
-                      style={{ backgroundImage: `url(${image.src})` }}
+                      style={{ backgroundImage: `url("${encodeURI(image.src)}")` }}
                       role="img"
-                      aria-label={image.alt || `Imagen de la galería ${index + 1}`}
+                      aria-label={image.alt || `Imagen de la galeria ${index + 1}`}
                     />
                   </div>
-                </div>
+                </button>
               ))}
             </div>
           ) : (
-            <p className="text-center text-muted-foreground">No hay imágenes disponibles en este momento.</p>
+            <p className="text-center text-muted-foreground">No hay imagenes disponibles en este momento.</p>
           )}
         </div>
       </section>
