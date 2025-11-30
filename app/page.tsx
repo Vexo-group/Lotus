@@ -129,7 +129,7 @@ export default function LotusEventos() {
       )}
       {promoOpen && (
         <div className="fixed inset-0 z-[60] flex items-center justify-center bg-black/60 backdrop-blur-sm p-4">
-          <div className="relative max-w-2xl w-full bg-white rounded-xl shadow-2xl overflow-hidden transition-transform duration-300 ease-out scale-100">
+          <div className="relative max-w-2xl w-full bg-white rounded-xl shadow-2xl overflow-hidden transition-transform duration-300 ease-out scale-100 flex flex-col max-h-[90vh]">
             <button
               className="absolute top-3 right-3 p-2 rounded-full bg-black/70 text-white hover:bg-black/80 transition-colors"
               aria-label="Cerrar promocion"
@@ -140,9 +140,9 @@ export default function LotusEventos() {
             <img
               src="/PromoInaguracion.png"
               alt="Promocion de inauguracion"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-contain max-h-[70vh]"
             />
-            <div className="absolute bottom-12 left-0 right-0 flex justify-center px-4">
+            <div className="w-full px-4 py-6 flex justify-center bg-white">
               <Button
                 className="animate-bounce bg-white text-black hover:bg-white/90 shadow-lg"
                 onClick={() => openWhatsApp('Promo Inauguracion')}
