@@ -196,7 +196,7 @@ export default function LotusEventos() {
 
       {/* Hero Section */}
       <section id="home" className="relative pt-20 min-h-screen flex items-center justify-center bg-gradient-to-br from-neutral-50 via-pink-50/20 to-purple-50/30">
-        <div className="absolute inset-0 bg-[url('/Lotus_Hero2.jpg')] bg-cover bg-center opacity-60" />
+        <div className="absolute inset-0 bg-[url('/Lotus_Hero.jpg')] bg-cover bg-center opacity-60" />
         <div className="container mx-auto px-4 py-20 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-5xl md:text-7xl font-bold mb-6 text-balance">
