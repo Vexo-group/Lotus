@@ -382,7 +382,7 @@ export default function LotusEventos() {
               </Button>
             </div>
             <div className="relative min-h-[400px] lg:min-h-full order-1 lg:order-2">
-              <div className="absolute inset-0 bg-[url('/elegant-adult-party-dinner-celebration.jpg')] bg-cover bg-center" />
+              <div className="absolute inset-0 bg-[url('/elegant-adult-party-dinner-celebration.png')] bg-cover bg-center" />
               <div className="absolute inset-0 bg-gradient-to-l from-black/40 to-transparent" />
             </div>
           </div>
@@ -390,7 +390,7 @@ export default function LotusEventos() {
           {/* Eventos Corporativos - Image Left, Content Right */}
           <div className="grid lg:grid-cols-2 min-h-[600px]">
             <div className="relative min-h-[400px] lg:min-h-full">
-              <div className="absolute inset-0 bg-[url('/corporate-event-meeting-presentation-professional.jpg')] bg-cover bg-center" />
+              <div className="absolute inset-0 bg-[url('/empresarialMuestra.png')] bg-cover bg-center" />
               <div className="absolute inset-0 bg-gradient-to-r from-black/40 to-transparent" />
             </div>
             <div className="bg-[#e0007b] text-white p-12 lg:p-16 flex flex-col justify-center">
@@ -433,7 +433,7 @@ export default function LotusEventos() {
           {/* Ferias - Image Left, Content Right */}
           <div className="grid lg:grid-cols-2 min-h-[600px]">
             <div className="relative min-h-[400px] lg:min-h-full">
-              <div className="absolute inset-0 bg-[url('/market-fair-vendors-stands-entrepreneurs.jpg')] bg-cover bg-center" />
+              <div className="absolute inset-0 bg-[url('/portadaFerias.png')] bg-cover bg-center" />
               <div className="absolute inset-0 bg-gradient-to-r from-black/40 to-transparent" />
             </div>
             <div className="bg-[#e0007b] text-white p-12 lg:p-16 flex flex-col justify-center">
@@ -465,7 +465,7 @@ export default function LotusEventos() {
               </Button>
             </div>
             <div className="relative min-h-[400px] lg:min-h-full order-1 lg:order-2">
-              <div className="absolute inset-0 bg-[url('/special-celebration-wedding-baptism-elegant.jpg')] bg-cover bg-center" />
+              <div className="absolute inset-0 bg-[url('/florero.png')] bg-cover bg-center" />
               <div className="absolute inset-0 bg-gradient-to-l from-black/40 to-transparent" />
             </div>
           </div>
