@@ -2,7 +2,7 @@
 
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { Menu, X, MessageCircleMoreIcon,Phone, Mail, MapPin, Instagram, Facebook, ChevronDown } from 'lucide-react'
+import { Menu, X, MessageCircleMoreIcon, Phone, Mail, MapPin, Instagram, Facebook, ChevronDown } from 'lucide-react'
 import { useState, useEffect } from "react"
 import Link from "next/link"
 
@@ -129,7 +129,7 @@ export default function LotusEventos() {
       )}
       {promoOpen && (
         <div className="fixed inset-0 z-[60] flex items-center justify-center bg-black/60 backdrop-blur-sm p-4">
-          <div className="relative max-w-2xl w-full bg-white rounded-xl shadow-2xl overflow-hidden transition-transform duration-300 ease-out scale-100 flex flex-col max-h-[90vh]">
+          <div className="relative max-w-[95vw] w-auto bg-transparent rounded-xl overflow-hidden transition-transform duration-300 ease-out scale-100 flex flex-col max-h-[95vh]">
             <button
               className="absolute top-3 right-3 p-2 rounded-full bg-black/70 text-white hover:bg-black/80 transition-colors"
               aria-label="Cerrar promocion"
@@ -140,9 +140,9 @@ export default function LotusEventos() {
             <img
               src="/PromoInaguracion.png"
               alt="Promocion de inauguracion"
-              className="w-full h-full object-contain max-h-[70vh]"
+              className="w-full h-full object-contain max-h-[85vh]"
             />
-            <div className="w-full px-4 py-6 flex justify-center bg-white">
+            <div className="w-full px-4 py-6 flex justify-center bg-transparent">
               <Button
                 className="animate-bounce bg-white text-black hover:bg-white/90 shadow-lg"
                 onClick={() => openWhatsApp('Promo Inauguracion')}
@@ -171,7 +171,7 @@ export default function LotusEventos() {
             </ul>
 
             {/* Mobile Menu Button */}
-            <button 
+            <button
               className="md:hidden p-2"
               onClick={() => setMenuOpen(!menuOpen)}
             >
@@ -248,7 +248,7 @@ export default function LotusEventos() {
             {/* Features - Clean lines design */}
             <div className="grid md:grid-cols-3 gap-12 md:gap-16">
               <div className="text-center space-y-4">
-                
+
                 <h3 className="text-xl font-bold">Atención Personalizada</h3>
                 <p className="text-muted-foreground leading-relaxed">
                   Te acompañamos antes y durante el evento, para que todo salga como vos necesitás.
@@ -256,7 +256,7 @@ export default function LotusEventos() {
               </div>
 
               <div className="text-center space-y-4">
-                
+
                 <h3 className="text-xl font-bold">Catering</h3>
                 <p className="text-muted-foreground leading-relaxed">
                   Contamos con un servicio de comidas y bebidas con propuestas que se amoldan a tus posibilidades.
@@ -264,7 +264,7 @@ export default function LotusEventos() {
               </div>
 
               <div className="text-center space-y-4">
-                
+
                 <h3 className="text-xl font-bold">Luces</h3>
                 <p className="text-muted-foreground leading-relaxed">
                   Trabajamos con la última tecnología en iluminación para tu evento.
@@ -285,7 +285,7 @@ export default function LotusEventos() {
         </div>
 
         <div className="space-y-0">
-          
+
           {/* Cumpleaños Infantiles - Image Left, Content Right */}
           <div className="grid lg:grid-cols-2 min-h-[600px]">
             <div className="relative min-h-[400px] lg:min-h-full">
@@ -474,12 +474,12 @@ export default function LotusEventos() {
       </section>
 
       {/* CTA Section */}
-      <section 
+      <section
         id="cta-section"
         className="py-24 relative overflow-hidden"
         style={{ backgroundColor: '#f5f5f5' }}
       >
-        <div 
+        <div
           className="absolute inset-0 bg-[url('/abstract-elegant-pattern.jpg')] bg-cover bg-center opacity-5"
         />
         <div className="container mx-auto px-4 relative z-10">
@@ -545,7 +545,7 @@ export default function LotusEventos() {
           </div>
 
           <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
-            
+
             {/* Formulario */}
             <Card>
               <CardContent className="p-8">
@@ -559,7 +559,7 @@ export default function LotusEventos() {
                       placeholder="Tu nombre"
                     />
                   </div>
-                  
+
                   <div>
                     <label htmlFor="email" className="block text-sm font-medium mb-2">Email</label>
                     <input
@@ -569,7 +569,7 @@ export default function LotusEventos() {
                       placeholder="tu@email.com"
                     />
                   </div>
-                  
+
                   <div className="grid sm:grid-cols-2 gap-4">
                     <div>
                       <label htmlFor="phone" className="block text-sm font-medium mb-2">Teléfono</label>
@@ -580,7 +580,7 @@ export default function LotusEventos() {
                         placeholder="Tu teléfono"
                       />
                     </div>
-                    
+
                     <div>
                       <label htmlFor="evento" className="block text-sm font-medium mb-2">Tipo de Evento</label>
                       <select
@@ -598,7 +598,7 @@ export default function LotusEventos() {
                       </select>
                     </div>
                   </div>
-                  
+
                   <div>
                     <label htmlFor="message" className="block text-sm font-medium mb-2">Mensaje</label>
                     <textarea
@@ -608,7 +608,7 @@ export default function LotusEventos() {
                       placeholder="Contanos sobre tu evento..."
                     />
                   </div>
-                  
+
                   <Button type="submit" size="lg" className="w-full">
                     Enviar Consulta
                   </Button>
@@ -621,7 +621,7 @@ export default function LotusEventos() {
               <Card>
                 <CardContent className="p-8">
                   <h3 className="text-2xl font-bold mb-6">Información de Contacto</h3>
-                  
+
                   <div className="space-y-6">
                     <div className="flex items-start gap-4">
                       <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
@@ -637,7 +637,7 @@ export default function LotusEventos() {
                         </a>
                       </div>
                     </div>
-                    
+
                     <div className="flex items-start gap-4">
                       <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
                         <Phone className="w-6 h-6 text-primary" />
@@ -650,7 +650,7 @@ export default function LotusEventos() {
                         </a>
                       </div>
                     </div>
-                    
+
                     <div className="flex items-start gap-4">
                       <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
                         <Mail className="w-6 h-6 text-primary" />
@@ -658,15 +658,15 @@ export default function LotusEventos() {
                       <div>
                         <h4 className="font-semibold mb-1">Email</h4>
                         <a
-                            href="mailto:lotuseventoslp@gmail.com" target="_blank"
-                            className="text-muted-foreground hover:text-primary transition-smooth"
-                          >
-                            lotuseventoslp@gmail.com
-                          </a>
+                          href="mailto:lotuseventoslp@gmail.com" target="_blank"
+                          className="text-muted-foreground hover:text-primary transition-smooth"
+                        >
+                          lotuseventoslp@gmail.com
+                        </a>
                       </div>
                     </div>
                   </div>
-                  
+
                   <div className="mt-8 pt-8 border-t border-neutral-200">
                     <h4 className="font-semibold mb-4">Seguinos en Redes</h4>
                     <div className="flex gap-4">
@@ -682,7 +682,7 @@ export default function LotusEventos() {
                 </CardContent>
               </Card>
 
-              
+
             </div>
           </div>
         </div>
@@ -698,7 +698,7 @@ export default function LotusEventos() {
                 Tu espacio para eventos inolvidables en el centro de La Plata.
               </p>
             </div>
-            
+
             <div>
               <h4 className="font-semibold mb-4 text-input">Enlaces Rápidos</h4>
               <ul className="space-y-2 text-muted-foreground">
@@ -708,7 +708,7 @@ export default function LotusEventos() {
                 <li><button onClick={() => scrollToSection('contacto')} className="hover:text-primary transition-colors">Contacto</button></li>
               </ul>
             </div>
-            
+
             <div>
               <h4 className="font-semibold mb-4 text-input">Contacto</h4>
               <ul className="space-y-2 text-muted-foreground">
@@ -718,7 +718,7 @@ export default function LotusEventos() {
               </ul>
             </div>
           </div>
-          
+
           <div className="pt-8 border-t border-neutral-200 text-center text-muted-foreground">
             <p>© 2025 LOTUS Eventos. Todos los derechos reservados.</p>
           </div>
