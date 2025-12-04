@@ -473,6 +473,124 @@ export default function LotusEventos() {
         </div>
       </section>
 
+      {/* Menu Lotus Section */}
+      <section id="menu-lotus" className="py-24 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16 max-w-3xl mx-auto space-y-4">
+            <h2 className="text-4xl md:text-5xl font-bold">Menú Lotus</h2>
+            <p className="text-lg text-muted-foreground text-pretty">
+              Descubrí las opciones de catering pensadas junto a @chuladeleite para cada etapa: propuestas ricas, cuidadas y con presentaciones que lucen increíbles en cualquier tipo de evento.
+            </p>
+          </div>
+
+          <div className="grid gap-8 lg:gap-10 md:grid-cols-2 xl:grid-cols-3">
+            <div className="rounded-3xl border border-neutral-200 bg-neutral-50/70 p-8 shadow-sm h-full flex flex-col">
+              <div className="flex items-center justify-between mb-4">
+                <h3 className="text-2xl font-bold text-primary">Niños</h3>
+                <span className="text-sm font-semibold text-primary bg-primary/10 px-3 py-1 rounded-full">Family friendly</span>
+              </div>
+              <div className="space-y-4 text-muted-foreground flex-1">
+                <p>
+                  En LOTUS ofrecemos un servicio de catering completo, elaborado por @chuladeleite, pensado especialmente para que los chicos disfruten y los adultos se relajen. Nuestro menú combina opciones ricas, frescas y seguras, adaptadas a todas las edades y necesidades alimentarias.
+                </p>
+                <p>
+                  Preparamos cada evento con dedicación, cuidando cada detalle para que la mesa se vea hermosa y todos disfruten de una experiencia deliciosa.
+                </p>
+                <div className="space-y-3">
+                  <h4 className="font-semibold text-foreground">Incluye</h4>
+                  <ul className="space-y-2 list-disc list-inside">
+                    <li>Mesas dulces y saladas personalizadas</li>
+                    <li>Sandwichitos, chips, pizzetas, mini panchos y opciones saludables</li>
+                    <li>Tortas temáticas y cupcakes decorados</li>
+                    <li>Bebidas frías, limonadas y agua saborizada</li>
+                    <li>Opciones sin TACC y sin lácteos (a pedido)</li>
+                  </ul>
+                </div>
+                <div className="space-y-3">
+                  <h4 className="font-semibold text-foreground">¿Por qué elegir nuestro catering?</h4>
+                  <ul className="space-y-2 list-disc list-inside">
+                    <li>Productos frescos y de calidad</li>
+                    <li>Presentación estética estilo pastel, ideal para fotos</li>
+                    <li>Atención cálida y profesional</li>
+                    <li>Adaptable a cualquier tipo de fiesta o temática</li>
+                  </ul>
+                </div>
+                <p className="text-foreground">
+                  Nuestro objetivo es que no te preocupes por nada: vos disfrutá, nosotros nos ocupamos del resto.
+                </p>
+              </div>
+            </div>
+
+            <div className="rounded-3xl border border-neutral-200 bg-neutral-50/70 p-8 shadow-sm h-full flex flex-col">
+              <div className="flex items-center justify-between mb-4">
+                <h3 className="text-2xl font-bold text-primary">Adolescentes</h3>
+                <span className="text-sm font-semibold text-primary bg-primary/10 px-3 py-1 rounded-full">Teen parties</span>
+              </div>
+              <div className="space-y-4 text-muted-foreground flex-1">
+                <p>
+                  Nuestro servicio de catering para adolescentes está pensado para acompañar fiestas dinámicas, modernas y llenas de energía. En LOTUS combinamos sabor, presentación y practicidad para crear una experiencia que los chicos disfruten al máximo a cargo de @chuladeleite.
+                </p>
+                <p>
+                  Ofrecemos un menú variado, actual y flexible, ideal para cumpleaños, fiestas de 15 informales, teen parties y malones.
+                </p>
+                <div className="space-y-3">
+                  <h4 className="font-semibold text-foreground">Incluye</h4>
+                  <ul className="space-y-2 list-disc list-inside">
+                    <li>Picadas modernas (wraps, nachos, bastones crocantes, salsas)</li>
+                    <li>Minis: hamburguesitas, panchos gourmet, pizzetas, empanaditas</li>
+                    <li>Mesa dulce con brownies, tarteletas, cookies decoradas y cupcakes</li>
+                    <li>Bebidas frías, limonadas y barras sin alcohol</li>
+                  </ul>
+                </div>
+                <div className="space-y-3">
+                  <h4 className="font-semibold text-foreground">¿Por qué elegir nuestro catering teen?</h4>
+                  <ul className="space-y-2 list-disc list-inside">
+                    <li>Presentación estética moderna, ideal para fotos y reels</li>
+                    <li>Menú práctico y delicioso, pensado para grupos grandes</li>
+                    <li>Flexibilidad para adaptarse a la temática del evento</li>
+                    <li>Equipo profesional, atento y organizado</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div className="rounded-3xl border border-neutral-200 bg-neutral-50/70 p-8 shadow-sm h-full flex flex-col">
+              <div className="flex items-center justify-between mb-4">
+                <h3 className="text-2xl font-bold text-primary">Adultos</h3>
+                <span className="text-sm font-semibold text-primary bg-primary/10 px-3 py-1 rounded-full">Eventos</span>
+              </div>
+              <div className="space-y-4 text-muted-foreground flex-1">
+                <p>
+                  En LOTUS ofrecemos un servicio de catering especialmente diseñado para eventos de adultos, combinando calidad, presentación y sabores que se destacan. Creamos propuestas gastronómicas elegantes y modernas, ideales para reuniones sociales, eventos corporativos, after office, cumpleaños, aniversarios y celebraciones especiales.
+                </p>
+                <p>
+                  Nuestro enfoque es brindar una experiencia completa: platos deliciosos, estética cuidada y un servicio atento que permite a cada invitado disfrutar sin preocupaciones a cargo de @chuladeleite.
+                </p>
+                <div className="space-y-3">
+                  <h4 className="font-semibold text-foreground">Incluye</h4>
+                  <ul className="space-y-2 list-disc list-inside">
+                    <li>Finger food gourmet: bruschettas, pinchos, mini tartas, empanaditas especiales, pizzas</li>
+                    <li>Picadas premium con variedades de quesos, fiambres y dips</li>
+                    <li>Mesa dulce elegante: brownies, shots, tartas y postres individuales</li>
+                    <li>Bebidas frías, barras con/sin alcohol y opciones personalizadas</li>
+                  </ul>
+                </div>
+                <div className="space-y-3">
+                  <h4 className="font-semibold text-foreground">¿Por qué elegir nuestro catering para adultos?</h4>
+                  <ul className="space-y-2 list-disc list-inside">
+                    <li>Presentación estética profesional</li>
+                    <li>Sabores modernos y opciones gourmet</li>
+                    <li>Adaptación a cualquier tipo de evento o temática</li>
+                    <li>Equipo responsable, puntual y organizado</li>
+                    <li>Opciones vegetarianas, veganas y sin TACC disponibles</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section
         id="cta-section"
@@ -721,6 +839,7 @@ export default function LotusEventos() {
 
           <div className="pt-8 border-t border-neutral-200 text-center text-muted-foreground">
             <p>© 2025 LOTUS Eventos. Todos los derechos reservados.</p>
+            <p>Diseño y desarrollo por Zairo.dev</p>
           </div>
         </div>
       </footer>
