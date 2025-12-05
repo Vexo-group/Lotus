@@ -46,7 +46,7 @@ export default function LotusEventos() {
 
   const openWhatsApp = (service: string) => {
     const message = encodeURIComponent(`Hola ! Quiero mas informacion del Servicio ${service}`)
-    window.open(`https://wa.me/5492214188503?text=${message}`, '_blank')
+    window.open(`https://wa.me/5492214984233?text=${message}`, '_blank')
   }
 
   useEffect(() => {
@@ -425,7 +425,7 @@ export default function LotusEventos() {
               </Button>
             </div>
             <div className="relative min-h-[400px] lg:min-h-full order-1 lg:order-2">
-              <div className="absolute inset-0 bg-[url('/art-gallery-exhibition-paintings-sculpture.jpg')] bg-cover bg-center" />
+              <div className="absolute inset-0 bg-[url('/MuestraDeArte.png')] bg-cover bg-center" />
               <div className="absolute inset-0 bg-gradient-to-l from-black/40 to-transparent" />
             </div>
           </div>
@@ -763,7 +763,7 @@ export default function LotusEventos() {
                       <div>
                         <h4 className="font-semibold mb-1">Teléfono</h4>
                         <a
-                          href="https://wa.me/5492214188503" target="_blank" className="text-muted-foreground hover:text-primary transition-smooth">
+                          href="https://wa.me/5492214984233" target="_blank" className="text-muted-foreground hover:text-primary transition-smooth">
                           +54 9 2215607906
                         </a>
                       </div>
@@ -846,7 +846,7 @@ export default function LotusEventos() {
 
       {/* WhatsApp Float Button */}
       <a
-        href="https://wa.me/5492214188503"
+        href="https://wa.me/5492214984233"
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-6 right-6 w-14 h-14 bg-green-500 rounded-full flex items-center justify-center text-white shadow-lg hover:bg-green-600 transition-colors z-50"
