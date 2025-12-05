@@ -764,7 +764,7 @@ export default function LotusEventos() {
                         <h4 className="font-semibold mb-1">Teléfono</h4>
                         <a
                           href="https://wa.me/5492214984233" target="_blank" className="text-muted-foreground hover:text-primary transition-smooth">
-                          +54 9 2215607906
+                          +54 9 2214984233
                         </a>
                       </div>
                     </div>
@@ -832,7 +832,7 @@ export default function LotusEventos() {
               <ul className="space-y-2 text-muted-foreground">
                 <li>Buenos Aires, Argentina</li>
                 <li>Calle 14 N° 619, La Plata</li>
-                <li>+54 9 2215607906</li>
+                <li>+54 9 221 498-4233</li>
               </ul>
             </div>
           </div>
