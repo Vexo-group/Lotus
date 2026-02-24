@@ -138,7 +138,7 @@ export default function LotusEventos() {
               <X className="w-5 h-5" />
             </button>
             <img
-              src="/promoInaguracion.png"
+              src="/PromoInaguracion.png"
               alt="Promocion de inauguracion"
               className="w-full h-full object-contain max-h-[85vh]"
             />
